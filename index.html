@@ -1,57 +1,34 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Safe Navigation... (Title tbd)</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+    <title>Centered Video Page</title>
+    <style>
+        /* CSS to center the video on the page */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px;
-    }
-
-    .video-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .video-title {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    video {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+        video {
+            /* Adjust the width and height as needed */
+            width: 80%;
+            max-width: 640px; /* Example max-width */
+            height: auto;
+        }
+    </style>
 </head>
-
 <body>
-  <h1></h1>
-  <div class="grid-container">
-    <div class="video-container">
-    <div class="video-container">
-      <h2 class="video-title">6.1 - Safe Navigation Policy Performance</h2>
-      <video controls autoplay loop onloadstart="this.playbackRate = 1.0">
-        <source src="assets/safe_nav_policy_performance.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-</body>
 
+<div class="video-container">
+    <!-- Your video file -->
+    <video controls>
+        <source src="assets/safe_nav_policy_performance.mp4" type="video/mp4">
+    </video>
+</div>
+
+</body>
 </html>
