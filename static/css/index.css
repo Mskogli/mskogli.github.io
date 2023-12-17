@@ -129,3 +129,13 @@ body {
 .eql-cntrb {
   font-size: smaller;
 }
+
+.item-video1 {
+  display: flex;
+  justify-content: center;
+}
+
+.is-3 {
+  display: flex;
+  justify-content: center;
+}
